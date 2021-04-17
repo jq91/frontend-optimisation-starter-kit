@@ -8,7 +8,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, nofollow">
 
-
+    <link rel="preload" as="image" href="/assets/images/homework/banner.png" />
     <link href="/assets/css/homework/app.css" rel="stylesheet">
     <link media="none" onload="if(media!='all')media='all'" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 
@@ -98,7 +98,7 @@
             <div>
               <div class="item__category item__category--50 l-megamenu__cat"><a title="White papers" href="">White papers</a></div>
               <h2 class="headline-2">Some super interesting resource to download</h2>
-              <p class="small-text"><img src="/assets/images/homework/post.png" class="l-megamenu__image" alt=""> Just download it and enjoy.
+              <p class="small-text"><img src="/assets/images/homework/post.png" loading="lazy" class="l-megamenu__image" alt=""> Just download it and enjoy.
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/" title="Download now: Ovum Report - Vodafone in-network call recording">Download now</a>
@@ -133,7 +133,7 @@
             <div>
               <div class="item__category item__category--79 l-megamenu__cat"><a title="eBooks" href="/">eBooks</a></div>
               <h2 class="headline-2">PCI DSS and the contact center</h2>
-              <p class="small-text"><img src="/assets/images/homework/news-example.jpg" class="l-megamenu__image" alt=""> Some text is here so you are impressed and you will click the button below.
+              <p class="small-text"><img src="/assets/images/homework/news-example.jpg" loading="lazy" class="l-megamenu__image" alt=""> Some text is here so you are impressed and you will click the button below.
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/2" title="Download now">Download now</a>
@@ -153,7 +153,7 @@
             <div>
               <div class="item__category item__category--50 l-megamenu__cat"><a title="White papers" href="/">White papers</a></div>
               <h2 class="headline-2">Report about mobile payment gateways</h2>
-              <p class="small-text"><img src="/assets/images/homework/post2.png" class="l-megamenu__image" alt=""> An MNO service that doesn&#39;t require a SIM change
+              <p class="small-text"><img src="/assets/images/homework/post2.png" loading="lazy" class="l-megamenu__image" alt=""> An MNO service that doesn&#39;t require a SIM change
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/" title="Download now">Download now</a>
@@ -186,20 +186,20 @@
         </div>
 
         <div class="home-banner__anim">
-          <img id="resizer" src="/assets/images/homework/anim/empty-block.png" alt="Empty block" />
-          <img id="shadow" src="/assets/images/homework/anim/shadow.png" alt="Shadow" />
-          <img id="rainbow" src="/assets/images/homework/anim/rainbow.png" alt="Rainbow" />
-          <img id="pc" src="/assets/images/homework/anim/pc.png" alt="PC" />
-          <img id="social" src="/assets/images/homework/anim/social.png" alt="Social media" />
-          <img id="mobile" src="/assets/images/homework/anim/mobile.png" alt="Mobile" />
-          <img id="card-base" src="/assets/images/homework/anim/card-base.png" alt="Card base" />
-          <img id="card-chip" src="/assets/images/homework/anim/card-chip.png" alt="Card chip" />
-          <img id="cloud" src="/assets/images/homework/anim/cloud.png" alt="Cloud" />
-          <img id="chart-base" src="/assets/images/homework/anim/chart-base.png" alt="Chart base" />
-          <img id="chart-1" src="/assets/images/homework/anim/chart-1.png" alt="Chart 1" />
-          <img id="chart-2" src="/assets/images/homework/anim/chart-2.png" alt="Chart 2" />
-          <img id="chart-3" src="/assets/images/homework/anim/chart-3.png" alt="Chart 3" />
-          <img id="email" src="/assets/images/homework/anim/email.png" alt="Email" />
+          <img id="resizer" src="/assets/images/homework/anim/empty-block.png" loading="lazy" alt="Empty block" />
+          <img id="shadow" src="/assets/images/homework/anim/shadow.png" loading="lazy" alt="Shadow" />
+          <img id="rainbow" src="/assets/images/homework/anim/rainbow.png" loading="lazy" alt="Rainbow" />
+          <img id="pc" src="/assets/images/homework/anim/pc.png" loading="lazy" alt="PC" />
+          <img id="social" src="/assets/images/homework/anim/social.png" loading="lazy" alt="Social media" />
+          <img id="mobile" src="/assets/images/homework/anim/mobile.png" loading="lazy" alt="Mobile" />
+          <img id="card-base" src="/assets/images/homework/anim/card-base.png" loading="lazy" alt="Card base" />
+          <img id="card-chip" src="/assets/images/homework/anim/card-chip.png" loading="lazy" alt="Card chip" />
+          <img id="cloud" src="/assets/images/homework/anim/cloud.png" loading="lazy" alt="Cloud" />
+          <img id="chart-base" src="/assets/images/homework/anim/chart-base.png" loading="lazy" alt="Chart base" />
+          <img id="chart-1" src="/assets/images/homework/anim/chart-1.png" loading="lazy" alt="Chart 1" />
+          <img id="chart-2" src="/assets/images/homework/anim/chart-2.png" loading="lazy" alt="Chart 2" />
+          <img id="chart-3" src="/assets/images/homework/anim/chart-3.png" loading="lazy" alt="Chart 3" />
+          <img id="email" src="/assets/images/homework/anim/email.png" loading="lazy" alt="Email" />
         </div>
       </div>
       <a title="Slide down" class="btn btn--border-blue btn--arrow-down" href="#main">Slide down</a>
@@ -230,7 +230,7 @@
             </label>
             <input id="email" name="email" type="email" placeholder="jenny.rosen@example.com" required>
           </div>
-        
+
           <div class="form__row">
             <label for="iban-element">
               IBAN
@@ -240,7 +240,7 @@
             </div>
           </div>
           <div id="bank-name"></div>
-        
+
           <button class="btn btn--bg-darkblue btn--border-blue" type="submit">Submit Payment</button>
         </form>
       </div>
@@ -250,7 +250,7 @@
         <div class="layout">
           <h2 class="headline-2">Find out more</h2>
 
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/W9-dlonF1JE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/W9-dlonF1JE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -260,7 +260,7 @@
           <section class="col-25 left">
             <div>
               <figure>
-                <img src="/assets/images/homework/i/slideshow/pci-compliance-45db.png" width="175" alt="">
+                <img src="/assets/images/homework/i/slideshow/pci-compliance-45db.png" loading="lazy" width="175" alt="">
               </figure>
               <h2 class="headline-2">PCI<br />
                 Compliance
@@ -274,7 +274,7 @@
           <section class="col-25 left">
             <div>
               <figure>
-                <img src="/assets/images/homework/i/slideshow/call-recording-4d00.png" width="175" alt="">
+                <img src="/assets/images/homework/i/slideshow/call-recording-4d00.png" loading="lazy" width="175" alt="">
               </figure>
               <h2 class="headline-2">Voice and data recording solutions
               </h2>
@@ -287,7 +287,7 @@
           <section class="col-25 left">
             <div>
               <figure>
-                <img src="/assets/images/homework/i/slideshow/interaction-analytics-4124.png" width="175" alt="">
+                <img src="/assets/images/homework/i/slideshow/interaction-analytics-4124.png" loading="lazy" width="175" alt="">
               </figure>
               <h2 class="headline-2">Interaction analytics solutions
               </h2>
@@ -300,7 +300,7 @@
           <section class="col-25 left">
             <div>
               <figure>
-                <img src="/assets/images/homework/i/slideshow/platform-cloud-enabled-f7b0.png" width="175" alt="">
+                <img src="/assets/images/homework/i/slideshow/platform-cloud-enabled-f7b0.png" loading="lazy" width="175" alt="">
               </figure>
               <h2 class="headline-2">Platform
                 <br><span class="headline-2__smaller"> cloud-enabled solutions</span>
@@ -331,7 +331,7 @@
             <div id="slider-features" class="text text--bg-grey">
               <section>
                 <figure>
-                  <img src="/assets/images/homework/i/slideshow/slider-capture-0f4c.png" alt="">
+                  <img src="/assets/images/homework/i/slideshow/slider-capture-0f4c.png" loading="lazy" alt="">
                 </figure>
                 <div>
                   <span class="headline-2 blue">Capture</span>
@@ -341,7 +341,7 @@
                     and interactions
                   </h3>
                   <p class="medium-text">
-                    Quisque cursus et, porttitor risus. 
+                    Quisque cursus et, porttitor risus.
                   </p>
                   <p>
                     <a title="Find out more" class="btn btn--bg-black btn--border-blue" href="/">Find out more</a>
@@ -350,7 +350,7 @@
               </section>
               <section>
                 <figure>
-                  <img src="/assets/images/homework/i/slideshow/slider-store-c81d.png" alt="">
+                  <img src="/assets/images/homework/i/slideshow/slider-store-c81d.png" loading="lazy" alt="">
                 </figure>
                 <div>
                   <span class="headline-2 green">Store</span>
@@ -369,7 +369,7 @@
               </section>
               <section>
                 <figure>
-                  <img src="/assets/images/homework/i/slideshow/slider-analyze-cbfa.png" alt="">
+                  <img src="/assets/images/homework/i/slideshow/slider-analyze-cbfa.png" loading="lazy" alt="">
                 </figure>
                 <div>
                   <span class="headline-2 orange">Analyze</span>
@@ -388,7 +388,7 @@
               </section>
               <section>
                 <figure>
-                  <img src="/assets/images/homework/i/slideshow/slider-consume-e378.png" alt="">
+                  <img src="/assets/images/homework/i/slideshow/slider-consume-e378.png" loading="lazy" alt="">
                 </figure>
                 <div>
                   <span class="headline-2 red">Consume</span>
@@ -492,7 +492,7 @@
                   </ul>
                 </div>
                 <div class="info-box__product-tour col-35 left">
-                  <img src="/assets/images/homework/slider-store.png" alt="">
+                  <img src="/assets/images/homework/slider-store.png" loading="lazy" alt="">
                   <a class="btn btn--bg-darkblue btn--border-blue popup" href="https://www.youtube.com/watch?v=KCK0PqiJbA0">Product Tour</a>
                 </div>
               </div>
@@ -502,27 +502,27 @@
       </article>
       <!-- // -->
       <!-- customers -->
-      <section 
+      <section
         class="page-section page-section--customers"
         style="background-image: url('/assets/images/homework/bg-sec-customers.jpg')">
         <div class="layout">
           <div class="text text--bg-blue">
             <h3 class="headline-3">
-              Hundreds of customers.<br> 
+              Hundreds of customers.<br>
               One Platform.
             </h3>
           </div>
           <ul class="page-section--customers__logos">
-            <li><img src="/assets/images/homework/i/logos/gallery/viking-135-1246.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/vodafone-135-1a70.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/sse-135-4e83.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/investec-135-6def.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/cowen-group-135-ef66.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/gatehouse-bank-135-d82b.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/bgc-135-bb6b.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/centrica-135-1f68.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/itg-1352-5e17.jpg" alt=""></li>
-            <li><img src="/assets/images/homework/i/logos/gallery/bmo-135-78f7.jpg" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/viking-135-1246.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/vodafone-135-1a70.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/sse-135-4e83.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/investec-135-6def.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/cowen-group-135-ef66.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/gatehouse-bank-135-d82b.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/bgc-135-bb6b.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/centrica-135-1f68.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/itg-1352-5e17.jpg" loading="lazy" alt=""></li>
+            <li><img src="/assets/images/homework/i/logos/gallery/bmo-135-78f7.jpg" loading="lazy" alt=""></li>
           </ul>
           <div class="text text--bg-blue page-section--customers__learn">
             <p>
@@ -548,7 +548,7 @@
                       <h6 class="headline-7"><a href="/">Some event that happened on 2014 Amsterdam, Netherlands</a></h6>
                     </header>
                     <figure>
-                      <img src="/assets/images/homework/post3.png" alt="">
+                      <img src="/assets/images/homework/post3.png" loading="lazy" alt="">
                     </figure>
                     <p class="small-text">
                       Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam.
@@ -565,7 +565,7 @@
                       <h6 class="headline-7"><a href="/">Council Community Meeting 9-11 2014 Florida USA</a></h6>
                     </header>
                     <figure>
-                      <img src="/assets/images/homework/post4.png" alt="">
+                      <img src="/assets/images/homework/post4.png" loading="lazy" alt="">
                     </figure>
                     <p class="small-text">
                       Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam.
@@ -582,7 +582,7 @@
                       <h6 class="headline-7"><a href="">European Community Meeting Maritim Hotel Berlin October 7-9, 2014  Berlin, Germany</a></h6>
                     </header>
                     <figure>
-                      <img src="/assets/images/homework/post5.png" alt="">
+                      <img src="/assets/images/homework/post5.png" loading="lazy" alt="">
                     </figure>
                     <p class="small-text">
                       Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam.
@@ -633,7 +633,7 @@
       <div class="l-footer__top">
         <div class="layout">
           <div class="col-15 left">
-            <a title="Home" href="/"><img src="/assets/images/homework/logo.svg" alt="Web Dev Insider" width="141" height="42"></a>
+            <a title="Home" href="/"><img src="/assets/images/homework/logo.svg" loading="lazy" alt="Web Dev Insider" width="141" height="42"></a>
           </div>
           <div class="col-85 l-footer__top-links right">
             <ul>
@@ -743,8 +743,8 @@
       <div class="l-footer__bottom">
         <div class="layout">
           <div class="col-50 l-footer__bottom-copyright left">
-            <span>© 20XX Web Dev Insider page to optimise</span> 
-            <span><a title="Privacy &amp; Cookie policy" href="/">Privacy &amp; Cookie policy</a></span> 
+            <span>© 20XX Web Dev Insider page to optimise</span>
+            <span><a title="Privacy &amp; Cookie policy" href="/">Privacy &amp; Cookie policy</a></span>
           </div>
         </div>
       </div>

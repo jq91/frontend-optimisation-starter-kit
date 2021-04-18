@@ -1,4 +1,7 @@
 # Front-end / web performance optimisation starter kit
+
+You can see and test a working project at: https://frontend-optimisation-starter-kit-pied.vercel.app/
+
 This starter kit has been created based on:
 
 [![npm](https://img.shields.io/npm/v/@jr-cologne/create-gulp-starter-kit.svg)](https://www.npmjs.com/package/@jr-cologne/create-gulp-starter-kit)

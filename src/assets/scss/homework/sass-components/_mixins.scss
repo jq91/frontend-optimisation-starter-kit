@@ -30,7 +30,7 @@
 
 
 @mixin hidetext() {
-    text-indent: 200%;
+    text-indent: -999999px;
     white-space: nowrap;
     overflow: hidden;
 }

@@ -14,6 +14,54 @@
     <link href="/favicon.ico" rel="icon">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
+    <style id="critical-styles">
+      .loader,
+      .loader:after {
+        border-radius: 50%;
+        width: 5em;
+        height: 5em;
+      }
+      .loader {
+        margin: 60px auto;
+        font-size: 10px;
+        position: relative;
+        text-indent: -9999em;
+        border-top: .6em solid rgba(255, 255, 255, 0.2);
+        border-right: .6em solid rgba(255, 255, 255, 0.2);
+        border-bottom: .6em solid rgba(255, 255, 255, 0.2);
+        border-left: .6em solid #ffffff;
+        -webkit-transform: translateZ(0);
+        -ms-transform: translateZ(0);
+        transform: translateZ(0);
+        -webkit-animation: load8 1.1s infinite linear;
+        animation: load8 1.1s infinite linear;
+      }
+      @-webkit-keyframes load8 {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes load8 {
+        0% {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        100% {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+      .l-home-banner .loader{
+        position: absolute;
+        top: 50%;
+      }
+    </style>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -159,6 +207,7 @@
             </div>
           </div>
           <p><a class="btn btn--bg-darkblue btn--border-blue popup" href="https://www.youtube.com/watch?v=4ypqTZcM-9M">Watch video now</a><a class="btn btn--transparent-white" href="">or Contact us</a></p>
+          <div class="loader"></div>
         </div>
 
         <div class="home-banner__anim">
@@ -176,6 +225,9 @@
           <img id="chart-2" src="/assets/images/homework/anim/chart-2.png" loading="lazy" width="23" height="133" alt="Chart 2" />
           <img id="chart-3" src="/assets/images/homework/anim/chart-3.png" loading="lazy" width="23" height="72" alt="Chart 3" />
           <img id="email-img" src="/assets/images/homework/anim/email.png" loading="lazy" width="950" height="660" alt="Email" />
+        </div>
+        <div class="home-banner__anim show">
+          <div class="loader"></div>
         </div>
       </div>
       <a title="Slide down" class="btn btn--border-blue btn--arrow-down" href="#main">Slide down</a>

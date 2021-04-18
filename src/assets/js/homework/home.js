@@ -12,7 +12,7 @@ require(['./main'], function (main) {
 
 
 			    function start_anim() {
-			    $('.l-home-banner .loader, .home-banner__anim.show').remove();
+          setTimeout(function(){ $('.home-banner__anim.show').remove(); }, 100);
 					TweenLite.to('.home-banner__anim', 1, {opacity:1, delay:0.5});
 					TweenLite.to('#platform, #pc', 1, {top:'0', ease:Back.easeOut, delay:0.5});
 
@@ -58,6 +58,7 @@ require(['./main'], function (main) {
 				    TweenMax.set('#rainbow', {opacity:0, left:'-5%'});
 
 
+          setTimeout(function(){ $('.l-home-banner .loader').remove(); }, 1200);
 					TweenLite.to('.home-banner__content p', 2, {opacity:1, delay:1.6});
 					TweenLite.to('.l-home-banner__3-cols > div', 1, {opacity:1, delay:1.7});
 					TweenLite.to('.home-banner__content .headline-1', 2, {opacity:1, delay:1.1});

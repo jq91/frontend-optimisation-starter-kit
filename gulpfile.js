@@ -231,9 +231,9 @@ gulp.task(
     'videos',
     'extra-files',
     'images',
-    'purgecss',
-    'generate-critical-css',
-    'generate-service-worker',
+    /*'purgecss',*/
+    /*'generate-critical-css',*/
+    /*'generate-service-worker',*/
   )
 );
 

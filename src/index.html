@@ -10,7 +10,6 @@
 
     <link rel="preload" as="image" href="/assets/images/homework/banner.png" />
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preconnect" href="https://js.stripe.com">
     <link rel="preconnect" href="https://embed.tawk.to">
@@ -291,7 +290,7 @@
         <div class="layout">
           <h2 class="headline-2">Find out more</h2>
 
-          <iframe loading="lazy" width="560" height="315" src="https://www.youtube.com/embed/W9-dlonF1JE" title="Web Dev Insider - YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe loading="lazy" width="560" height="315" data-lazy-iframe="https://www.youtube.com/embed/W9-dlonF1JE" title="Web Dev Insider - YouTube Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
 
@@ -880,6 +879,25 @@
         lazyBgImageObserver.observe(lazyBg);
       });
       /* end lazy image backgrounds */
+
+      /* lazy iframe */
+      const lazyIframes = document.querySelectorAll('[data-lazy-iframe]');
+      const lazyIframeObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const lazyIframe = entry.target;
+            lazyIframe.src = lazyIframe.dataset.lazyIframe;
+            lazyIframe.classList.add('iframe-lazyloaded');
+            lazyIframe.removeAttribute('data-lazy-iframe');
+            observer.unobserve(lazyIframe);
+          }
+        });
+      });
+
+      lazyIframes.forEach((lazyIframe) => {
+        lazyIframeObserver.observe(lazyIframe);
+      });
+      /* end lazy iframe */
     </script>
   </body>
 </html>

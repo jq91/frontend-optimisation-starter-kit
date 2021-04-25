@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://use.typekit.net" crossorigin>
     <link rel="preload" as="style" href="https://use.typekit.net/lna1ryl.css">
     <link rel="preconnect" href="https://www.googletagmanager.com">
-    <link rel="preconnect" href="https://js.stripe.com">
     <link rel="preconnect" href="https://embed.tawk.to">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="//use.typekit.net">
@@ -91,7 +90,7 @@
             <div>
               <div class="item__category item__category--50 l-megamenu__cat"><a title="White papers" href="">White papers</a></div>
               <h2 class="headline-2">Some super interesting resource to download</h2>
-              <p class="small-text"><img src="/assets/images/homework/post.png" loading="lazy" class="l-megamenu__image" alt=""> Just download it and enjoy.
+              <p class="small-text"><img data-src="/assets/images/homework/post.png" loading="lazy" class="lazy l-megamenu__image" width="1332" height="1132" alt="Post"> Just download it and enjoy.
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/" title="Download now: Ovum Report - Vodafone in-network call recording">Download now</a>
@@ -126,7 +125,7 @@
             <div>
               <div class="item__category item__category--79 l-megamenu__cat"><a title="eBooks" href="/">eBooks</a></div>
               <h2 class="headline-2">PCI DSS and the contact center</h2>
-              <p class="small-text"><img src="/assets/images/homework/img-about-overview-platform.png" loading="lazy" class="l-megamenu__image" alt=""> Some text is here so you are impressed and you will click the button below.
+              <p class="small-text"><img data-src="/assets/images/homework/img-about-overview-platform.png" loading="lazy" class="lazy l-megamenu__image" width="" height="" alt="About"> Some text is here so you are impressed and you will click the button below.
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/2" title="Download now">Download now</a>
@@ -146,7 +145,7 @@
             <div>
               <div class="item__category item__category--50 l-megamenu__cat"><a title="White papers" href="/">White papers</a></div>
               <h2 class="headline-2">Report about mobile payment gateways</h2>
-              <p class="small-text"><img src="/assets/images/homework/post2.png" loading="lazy" class="l-megamenu__image" alt=""> An MNO service that doesn&#39;t require a SIM change
+              <p class="small-text"><img data-src="/assets/images/homework/post2.png" loading="lazy" class="lazy l-megamenu__image" width="1412" height="1030" alt="Post"> An MNO service that doesn&#39;t require a SIM change
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/" title="Download now">Download now</a>
@@ -164,7 +163,7 @@
               <h2 class="headline-8">Always happy to speak!</h2>
               <h1 class="headline-1">Contact us</h1>
               <p>Or come to meet us in London, in the office.</p>
-              <img class="inner-page__header__ico" src="/assets/images/homework/header-ico.png" loading="lazy" alt="">
+              <img data-src="/assets/images/homework/header-ico.png" loading="lazy" class="lazy inner-page__header__ico" width="178" height="128" alt="Header ico">
           </div>
 
       </header>
@@ -252,7 +251,7 @@
       <div class="l-footer__top">
         <div class="layout">
         <div class="col-15 left">
-            <a title="Home" href="/"><img src="/assets/images/homework/logo.svg" loading="lazy" alt="Web Dev Insider" width="141" height="42"></a>
+            <a title="Home" href="/"><img data-src="/assets/images/homework/logo.svg" class="lazy" loading="lazy" alt="Web Dev Insider" width="141" height="42"></a>
         </div>
         <div class="col-85 l-footer__top-links right">
             <ul>
@@ -379,7 +378,21 @@
     <script src="/assets/js/homework/vendor/jquery/dist/jquery.min.js" async></script>
     <script>var media_url = '/assets/', site_url = '/';</script>
     <script data-main="/assets/js/homework/home" src="/assets/js/homework/vendor/requirejs/require.js" async></script>
-    <script src="https://js.stripe.com/v3/" defer></script>
+    <script>
+      "use strict";
+
+      if ('loading' in HTMLImageElement.prototype) {
+        var resources = document.querySelectorAll("[loading]");
+        resources.forEach(function (resource) {
+          resource.src = resource.dataset.src;
+        });
+      } else {
+        var script = document.createComment("script");
+        script.async = true;
+        script.src = "/assets/js/homework/vendor/lazysizes.min.js";
+        document.body.appendChild(script);
+      }
+    </script>
     <!--Start of Tawk.to Script-->
     <script type="text/javascript">
       var scriptExecuted = false;

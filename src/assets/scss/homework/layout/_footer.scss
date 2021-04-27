@@ -1,6 +1,12 @@
 .l-footer {
 	color: #fff;
 
+  @media screen and (max-width: 1101px) {
+    .footer-logo {
+      display: none;
+    }
+  }
+
 	a {
 		color: $lightblue;
 

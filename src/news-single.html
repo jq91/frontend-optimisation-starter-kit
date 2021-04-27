@@ -305,7 +305,7 @@
       <div class="l-footer__top">
         <div class="layout">
           <div class="col-15 left">
-            <a title="Home" href="/"><img data-src="/assets/images/homework/logo.svg" class="lazy" loading="lazy" alt="Web Dev Insider" width="141" height="42"></a>
+            <a title="Home" href="/"><img class="lazy footer-logo" data-src-desktop="/assets/images/homework/logo-footer.svg" loading="lazy" alt="Web Dev Insider" width="141" height="42"></a>
           </div>
           <div class="col-85 l-footer__top-links right">
             <ul>
@@ -484,5 +484,32 @@
       document.addEventListener('touch', initScript, {once : false});
     </script>
     <!--End of Tawk.to Script-->
+    <script>
+      /* lazy after scrolling */
+      window.addEventListener('scroll', throttle(function(){
+        if(window.pageYOffset > 50) {
+
+          // show mobile logo only for devices > 1101px
+          if(window.innerWidth > 1101) {
+            var footer_logo = document.querySelector('.footer-logo[data-src-desktop]');
+            if(footer_logo != null) {
+              footer_logo.src = footer_logo.dataset.srcDesktop;
+              footer_logo.removeAttribute('data-src-desktop');
+            }
+          }
+
+        }
+      }, 1000));
+      function throttle(fn, wait) {
+        var time = Date.now();
+        return function() {
+          if ((time + wait - Date.now()) < 0) {
+            fn();
+            time = Date.now();
+          }
+        }
+      }
+      /* end lazy after scrolling */
+    </script>
   </body>
 </html>

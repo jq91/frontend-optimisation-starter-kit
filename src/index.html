@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Web Dev Insider - site to optimise - homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web Dev Insider demo page for learning purposes.">
+    <meta name="description" content="Web Dev Insider demo page for learning purposes. Core Web Vitals.">
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, nofollow">
 
@@ -19,6 +19,16 @@
     <link href="/assets/css/homework/app.css" rel="stylesheet">
     <link href="/assets/css/homework/tailwind.min.css" rel="stylesheet">
     <link href="/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/homework/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/homework/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/homework/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/homework/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/homework/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/homework/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/homework/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/homework/apple-touch-icon-180x180.png" />
+    <meta name="theme-color" content="#fff">
 
     <style id="critical-styles">
       @font-face {
@@ -84,13 +94,21 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TGDSWZ8');</script>
     <!-- End Google Tag Manager -->
+
+    <link rel="canonical" href="https://frontend-optimisation-starter-kit-pied.vercel.app" />
+    <meta property="og:title" content="Web Dev Insider - site to optimise">
+    <meta property="og:site_name" content="Web Dev Insider project">
+    <meta property="og:url" content="https://frontend-optimisation-starter-kit-pied.vercel.app/">
+    <meta property="og:description" content="Frontend optimisation project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://frontend-optimisation-starter-kit-pied.vercel.app/assets/images/homework/logo.svg">
   </head>
   <body>
 
     <div class="overlay"></div>
     <div class="search">
       <div class="layout3 text text--bg-grey">
-        <a class="btn-close search__btn-close" href="javascript:;">Close</a>
+        <a class="btn-close search__btn-close" href="javascript:;" title="Close">Close</a>
         <p>Search and hit enter</p>
         <form action="/search" method="get">
           <input type="text" name="phrase" id="phrase" placeholder="What are you looking for?">
@@ -100,14 +118,14 @@
     </div>
 
     <nav class="l-navbar">
-      <a class="logo" href="/">
-        <img src="/assets/images/homework/logo.svg" width="120" height="58" alt="Web Dev Insider" title="Web Dev Insider">
+      <a class="logo" href="/" title="Web Dev Insider logo">
+        <img src="/assets/images/homework/logo.svg" width="120" height="58" alt="Web Dev Insider">
       </a>
 
       <ul class="navbar-menu">
-        <li class="navbar-menu__dropdown"><a id="item-1" href="#">Platform</a></li>
-        <li class="navbar-menu__dropdown"><a id="item-2" href="#">Solutions</a></li>
-        <li class="navbar-menu__dropdown"><a id="item-3" href="#">Services</a></li>
+        <li class="navbar-menu__dropdown"><a id="item-1" href="#" title="Platform">Platform</a></li>
+        <li class="navbar-menu__dropdown"><a id="item-2" href="#" title="Solutions">Solutions</a></li>
+        <li class="navbar-menu__dropdown"><a id="item-3" href="#" title="Services">Services</a></li>
         <li><a title="Log in" href="/">Log in</a></li>
         <li><a title="Contact" href="/">Contact</a></li>
         <li><a class="navbar-menu__search js-open-searchbar" href="#" title="What are you looking for?"><span>Search</span></a></li>
@@ -116,18 +134,18 @@
     </nav>
     <div class="l-megamenu">
       <div class="layout">
-        <a class="btn-close js-close-megamenu" href="">Close</a>
+        <a class="btn-close js-close-megamenu" href="#" title="Close">Close</a>
         <div class="l-megamenu__layer" id="megamenu-item-1">
           <div class="col-65 l-megamenu__links left">
             <ul>
-              <li><a href="/">Platform Overview</a></li>
-              <li><a href="/">Management Center</a></li>
+              <li><a href="/" title="Platform Overviiew">Platform Overview</a></li>
+              <li><a href="/" title="Managment">Management Center</a></li>
               <li>
                 <a title="Modules" href="/">Modules</a>
                 <ul>
-                  <li><a href="/">Capture</a></li>
-                  <li><a href="/">Storage</a></li>
-                  <li><a href="/">Interaction Analytics</a></li>
+                  <li><a href="/" title="Capture">Capture</a></li>
+                  <li><a href="/" title="Storage">Storage</a></li>
+                  <li><a href="/" title="Interaction Analytics">Interaction Analytics</a></li>
                 </ul>
               </li>
               <li><a title="Cloud" href="/">Cloud</a></li>
@@ -135,9 +153,9 @@
           </div>
           <div class="col-35 text right">
             <div>
-              <div class="item__category item__category--50 l-megamenu__cat"><a title="White papers" href="">White papers</a></div>
+              <div class="item__category item__category--50 l-megamenu__cat"><a title="White papers" href="#">White papers</a></div>
               <h2 class="headline-2">Some super interesting resource to download</h2>
-              <p class="small-text"><img class="lazy" data-src="/assets/images/homework/post.png" loading="lazy" width="1332" height="1132" class="l-megamenu__image" alt=""> Just download it and enjoy.
+              <p class="small-text"><img class="lazy" data-src="/assets/images/homework/post.png" loading="lazy" width="1332" height="1132" class="l-megamenu__image" alt="just download"> Just download it and enjoy.
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/" title="Download now: Ovum Report - Vodafone in-network call recording">Download now</a>
@@ -148,7 +166,7 @@
         <div class="l-megamenu__layer" id="megamenu-item-2">
           <div class="col-65 l-megamenu__links left">
             <ul>
-              <li><a href="/">Solution Overview</a></li>
+              <li><a href="/" title="Soluttions Overview">Solution Overview</a></li>
               <li>
                 <a title="Call recording" href="/">Call recording</a>
                 <ul>
@@ -172,7 +190,7 @@
             <div>
               <div class="item__category item__category--79 l-megamenu__cat"><a title="eBooks" href="/">eBooks</a></div>
               <h2 class="headline-2">PCI DSS and the contact center</h2>
-              <p class="small-text"><img class="lazy" data-src="/assets/images/homework/news-example.jpg" loading="lazy" width="944" height="256" class="l-megamenu__image" alt=""> Some text is here so you are impressed and you will click the button below.
+              <p class="small-text"><img class="lazy" data-src="/assets/images/homework/news-example.jpg" loading="lazy" width="944" height="256" class="l-megamenu__image" alt="Some text"> Some text is here so you are impressed and you will click the button below.
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/2" title="Download now">Download now</a>
@@ -192,7 +210,7 @@
             <div>
               <div class="item__category item__category--50 l-megamenu__cat"><a title="White papers" href="/">White papers</a></div>
               <h2 class="headline-2">Report about mobile payment gateways</h2>
-              <p class="small-text"><img class="lazy" data-src="/assets/images/homework/post2.png" loading="lazy" width="1412" height="1030" class="l-megamenu__image" alt=""> An MNO service that doesn&#39;t require a SIM change
+              <p class="small-text"><img class="lazy" data-src="/assets/images/homework/post2.png" loading="lazy" width="1412" height="1030" class="l-megamenu__image" alt="Some text"> An MNO service that doesn&#39;t require a SIM change
               </p>
               <p>
                 <a class="btn btn--bg-darkblue btn--border-blue" href="/" title="Download now">Download now</a>
@@ -226,7 +244,7 @@
               <p><strong>Cloud Speech Analytics</strong></p>
             </div>
           </div>
-          <p><a class="btn btn--bg-darkblue btn--border-blue popup" href="https://www.youtube.com/watch?v=4ypqTZcM-9M">Watch video now</a><a class="btn btn--transparent-white" href="">or Contact us</a></p>
+          <p><a class="btn btn--bg-darkblue btn--border-blue popup" href="https://www.youtube.com/watch?v=4ypqTZcM-9M" title="Watch video now">Watch video now</a><a class="btn btn--transparent-white" href="#">or Contact us</a></p>
           <div class="loader"></div>
         </div>
 
@@ -308,7 +326,7 @@
           <section class="col-25 left">
             <div>
               <figure>
-                <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/pci-compliance-45db.png" loading="lazy" width="175" height="" alt="">
+                <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/pci-compliance-45db.png" loading="lazy" width="175" height="" alt="Some text">
               </figure>
               <h2 class="headline-2">PCI<br />
                 Compliance
@@ -322,7 +340,7 @@
           <section class="col-25 left">
             <div>
               <figure>
-                <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/call-recording-4d00.png" loading="lazy" width="175" alt="">
+                <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/call-recording-4d00.png" loading="lazy" width="175" alt="Some text">
               </figure>
               <h2 class="headline-2">Voice and data recording solutions
               </h2>
@@ -335,7 +353,7 @@
           <section class="col-25 left">
             <div>
               <figure>
-                <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/interaction-analytics-4124.png" loading="lazy" width="175" alt="">
+                <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/interaction-analytics-4124.png" loading="lazy" width="175" alt="Some text">
               </figure>
               <h2 class="headline-2">Interaction analytics solutions
               </h2>
@@ -348,7 +366,7 @@
           <section class="col-25 left">
             <div>
               <figure>
-                <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/platform-cloud-enabled-f7b0.png" loading="lazy" width="175" alt="">
+                <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/platform-cloud-enabled-f7b0.png" loading="lazy" width="175" alt="Some text">
               </figure>
               <h2 class="headline-2">Platform
                 <br><span class="headline-2__smaller"> cloud-enabled solutions</span>
@@ -362,7 +380,7 @@
         </div>
       </div>
       <!-- // -->
-      <div class="page-section page-section--global-map page-section--global-map__home page-section--triangle-white" data-lazy-background="background: url(/assets/images/homework/map-dotted.png) center center no-repeat, url(/assets/images/homework/bg-sec-grad-lime.svg) top center no-repeat;">
+      <div class="page-section page-section--global-map page-section--global-map__home page-section--triangle-white" style="background-color: #38b79b;" data-lazy-background="background: url(/assets/images/homework/map-dotted.png) center center no-repeat, url(/assets/images/homework/bg-sec-grad-lime.svg) top center no-repeat;">
         <div class="layout">
           <h3 class="headline-3">Global cloud-based solution <br>for your online business.</h3>
         </div>
@@ -379,7 +397,7 @@
             <div id="slider-features" class="text text--bg-grey">
               <section>
                 <figure>
-                  <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/slider-capture-0f4c.png" loading="lazy" alt="">
+                  <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/slideshow/slider-capture-0f4c.png" loading="lazy" alt="Some text">
                 </figure>
                 <div>
                   <span class="headline-2 blue">Capture</span>
@@ -398,7 +416,7 @@
               </section>
               <section>
                 <figure>
-                  <img class="lazy" data-src="/assets/images/homework/i/slideshow/slider-store-c81d.png" loading="lazy" alt="">
+                  <img class="lazy" data-src="/assets/images/homework/i/slideshow/slider-store-c81d.png" loading="lazy" alt="Some text">
                 </figure>
                 <div>
                   <span class="headline-2 green">Store</span>
@@ -417,7 +435,7 @@
               </section>
               <section>
                 <figure>
-                  <img class="lazy" data-src="/assets/images/homework/i/slideshow/slider-analyze-cbfa.png" loading="lazy" alt="">
+                  <img class="lazy" data-src="/assets/images/homework/i/slideshow/slider-analyze-cbfa.png" loading="lazy" alt="Some text">
                 </figure>
                 <div>
                   <span class="headline-2 orange">Analyze</span>
@@ -436,7 +454,7 @@
               </section>
               <section>
                 <figure>
-                  <img class="lazy" data-src="/assets/images/homework/i/slideshow/slider-consume-e378.png" loading="lazy" alt="">
+                  <img class="lazy" data-src="/assets/images/homework/i/slideshow/slider-consume-e378.png" loading="lazy" alt="Some text">
                 </figure>
                 <div>
                   <span class="headline-2 red">Consume</span>
@@ -457,10 +475,10 @@
             <!-- slider's pager -->
             <div id="slider-features-pager" class="slider-full-width__pager">
               <ul>
-                <li><a class="blue active" data-slide-index="0" href="#">Capture</a></li>
-                <li><a class="green active" data-slide-index="1" href="#">Store</a></li>
-                <li><a class="orange active" data-slide-index="2" href="#">Analyze</a></li>
-                <li><a class="red active" data-slide-index="3" href="#">Consume</a></li>
+                <li><a class="blue active" data-slide-index="0" href="#" title="Capture">Capture</a></li>
+                <li><a class="green active" data-slide-index="1" href="#" title="Store">Store</a></li>
+                <li><a class="orange active" data-slide-index="2" href="#" title="Analyze">Analyze</a></li>
+                <li><a class="red active" data-slide-index="3" href="#" title="Consume">Consume</a></li>
               </ul>
             </div>
             <!-- // -->
@@ -518,7 +536,7 @@
             <div class="info-box__light text col-35 left">
               <div>
                 <p>In 2013, Aliquam erat ac ipsum. Integer aliquam purus. Quisque lorem tortor fringilla sed, vestibulum id, eleifend justo vel bibendum sapien massa ac turpis faucibus orci luctus non, consectetuer lobortis quis, varius in, purus. Integer ultrices posuere cubilia Curae, Nulla ipsum dolor lacus, suscipit adipiscing.</p>
-                <p><a class="btn btn--bg-white btn--border-blue" href="/">Our Accreditations</a></p>
+                <p><a class="btn btn--bg-white btn--border-blue" href="/" title="Our Accreditations">Our Accreditations</a></p>
               </div>
             </div>
             <div class="info-box__blue col-60 right">
@@ -540,8 +558,8 @@
                   </ul>
                 </div>
                 <div class="info-box__product-tour col-35 left" data-lazy-background="background: url(/assets/images/homework/banner-bg.jpg) -150px bottom no-repeat;">
-                  <img class="lazy" data-src="/assets/images/homework/slider-store.png" loading="lazy" alt="">
-                  <a class="btn btn--bg-darkblue btn--border-blue popup" href="https://www.youtube.com/watch?v=KCK0PqiJbA0">Product Tour</a>
+                  <img class="lazy" data-src="/assets/images/homework/slider-store.png" loading="lazy" alt="Some text">
+                  <a class="btn btn--bg-darkblue btn--border-blue popup" href="https://www.youtube.com/watch?v=KCK0PqiJbA0" title="Product tour">Product Tour</a>
                 </div>
               </div>
             </div>
@@ -561,20 +579,20 @@
             </h3>
           </div>
           <ul class="page-section--customers__logos">
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/viking-135-1246.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/vodafone-135-1a70.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/sse-135-4e83.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/investec-135-6def.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/cowen-group-135-ef66.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/gatehouse-bank-135-d82b.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/bgc-135-bb6b.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/centrica-135-1f68.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/itg-1352-5e17.jpg" loading="lazy" alt=""></li>
-            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/bmo-135-78f7.jpg" loading="lazy" alt=""></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/viking-135-1246.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/vodafone-135-1a70.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/sse-135-4e83.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/investec-135-6def.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/cowen-group-135-ef66.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/gatehouse-bank-135-d82b.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/bgc-135-bb6b.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/centrica-135-1f68.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/itg-1352-5e17.jpg" loading="lazy" alt="Some text"></li>
+            <li><img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/i/logos/gallery/bmo-135-78f7.jpg" loading="lazy" alt="Some text"></li>
           </ul>
           <div class="text text--bg-blue page-section--customers__learn">
             <p>
-              <strong>Learn how can help your business.</strong> <a title="Find out more" class="btn btn--bg-darkblue btn--border-blue" href="/">Find out more</a>
+              <strong style="text-shadow: 0 0 5px #000000;">Learn how can help your business.</strong> <a title="Find out more" class="btn btn--bg-darkblue btn--border-blue" href="/">Find out more</a>
             </p>
           </div>
         </div>
@@ -587,22 +605,22 @@
         <div class="col-70 l-social-media__news-blog left" data-lazy-background="background: #f7f7f7 url(/assets/images/homework/bg-box-clouds.png) top right no-repeat;">
           <div>
             <section class="l-home__news">
-              <h5 class="headline-6">News <span class="headline__see-all"><a title="See all news" href="/">See all news</a></span></h5>
+              <h4 class="headline-6">News <span class="headline__see-all"><a title="See all news" href="/">See all news</a></span></h4>
               <div class="news-list news-list--home text">
                 <article>
                   <div>
                     <header>
                       <div class="item__time-cat"><time datetime="2014-11-27T12:00">Nov 27, 2014</time><span class="item__cat"><a title="Events" href="/">Events</a></span></div>
-                      <h6 class="headline-7"><a href="/">Some event that happened on 2014 Amsterdam, Netherlands</a></h6>
+                      <h5 class="headline-7"><a href="/" title="Some event in Amsterdam, Netherlands">Some event that happened on 2014 Amsterdam, Netherlands</a></h5>
                     </header>
                     <figure>
-                      <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/post3.png" loading="lazy" alt="">
+                      <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/post3.png" loading="lazy" alt="Some text">
                     </figure>
                     <p class="small-text">
                       Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam.
                     </p>
                     <p>
-                      <a title="Read more" class="btn btn--bg-white btn--border-blue" href="">Read more</a>
+                      <a title="Read more" class="btn btn--bg-white btn--border-blue" href="/">Read more</a>
                     </p>
                   </div>
                 </article>
@@ -610,33 +628,33 @@
                   <div>
                     <header>
                       <div class="item__time-cat"><time datetime="2014-11-09T12:00">Nov 09, 2014</time><span class="item__cat"><a title="Events" href="/">Events</a></span></div>
-                      <h6 class="headline-7"><a href="/">Council Community Meeting 9-11 2014 Florida USA</a></h6>
+                      <h5 class="headline-7"><a href="/" title="Council Community">Council Community Meeting 9-11 2014 Florida USA</a></h5>
                     </header>
                     <figure>
-                      <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/post4.png" loading="lazy" alt="">
+                      <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/post4.png" loading="lazy" alt="Some text">
                     </figure>
                     <p class="small-text">
                       Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam.
                     </p>
                     <p>
-                      <a title="Read more" class="btn btn--bg-white btn--border-blue" href="">Read more</a>
+                      <a title="Read more" class="btn btn--bg-white btn--border-blue" href="/">Read more</a>
                     </p>
                   </div>
                 </article>
                 <article>
                   <div>
                     <header>
-                      <div class="item__time-cat"><time datetime="2014-10-07T12:00">Oct 07, 2014</time><span class="item__cat"><a title="Events" href="">Events</a></span></div>
-                      <h6 class="headline-7"><a href="">European Community Meeting Maritim Hotel Berlin October 7-9, 2014  Berlin, Germany</a></h6>
+                      <div class="item__time-cat"><time datetime="2014-10-07T12:00">Oct 07, 2014</time><span class="item__cat"><a title="Events" href="#">Events</a></span></div>
+                      <h5 class="headline-7"><a href="/" title="European Community">European Community Meeting Maritim Hotel Berlin October 7-9, 2014  Berlin, Germany</a></h5>
                     </header>
                     <figure>
-                      <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/post5.png" loading="lazy" alt="">
+                      <img class="lazy" data-src="https://ik.imagekit.io/jq/assets/images/homework/post5.png" loading="lazy" alt="Some text">
                     </figure>
                     <p class="small-text">
                       Cum sociis natoque penatibus et ultrices volutpat. Nullam wisi ultricies a, gravida vitae, dapibus risus ante sodales lectus blandit eu, tempor diam pede cursus vitae, ultricies eu, faucibus quis, porttitor eros cursus lectus, pellentesque eget, bibendum a, gravida ullamcorper quam.
                     </p>
                     <p>
-                      <a title="Read more" class="btn btn--bg-white btn--border-blue" href="">Read more</a>
+                      <a title="Read more" class="btn btn--bg-white btn--border-blue" href="/">Read more</a>
                     </p>
                   </div>
                 </article>
@@ -650,22 +668,22 @@
               <h5 class="headline-6">Connect</h5>
               <ul class="social-media social-media--white social-media--2-cols">
                 <li>
-                  <a rel="external" title="Our profile at Twitter" href="">
+                  <a rel="external" title="Our profile at Twitter" href="#">
                   <span class="social-media__ico social-media__twitter"><span><span>Twitter</span></span></span> Twitter
                   </a>
                 </li>
                 <li>
-                  <a rel="external" title="Our profile at Google+" href="">
+                  <a rel="external" title="Our profile at Google+" href="#">
                   <span class="social-media__ico social-media__gplus"><span><span>Google+</span></span></span> Google+
                   </a>
                 </li>
                 <li>
-                  <a rel="external" title="Our profile at Facebook" href="">
+                  <a rel="external" title="Our profile at Facebook" href="#">
                   <span class="social-media__ico social-media__facebook"><span><span>Facebook</span></span></span> Facebook
                   </a>
                 </li>
                 <li>
-                  <a rel="external" title="Our profile at LinkedIn" href="">
+                  <a rel="external" title="Our profile at LinkedIn" href="#">
                   <span class="social-media__ico social-media__linkedin"><span><span>LinkedIn</span></span></span> LinkedIn
                   </a>
                 </li>
@@ -688,10 +706,10 @@
               <li>
                 <span>Platform</span>
                 <ul>
-                  <li><a title="Platform Overview" href="">Platform Overview</a></li>
+                  <li><a title="Platform Overview" href="/">Platform Overview</a></li>
                   <li><a title="Management Center" href="/">Management Center</a></li>
                   <li>
-                    <a title="Modules" href="">Modules</a>
+                    <a title="Modules" href="#">Modules</a>
                     <ul>
                       <li><a title="Communications Capture" href="/">Capture</a></li>
                       <li><a title="Communications Storage" href="/">Storage</a></li>
@@ -704,22 +722,22 @@
               <li>
                 <span>Solutions</span>
                 <ul>
-                  <li><a title="Solutions Overview" href="">Solution Overview</a></li>
+                  <li><a title="Solutions Overview" href="#">Solution Overview</a></li>
                   <li>
-                    <a title="Call recording" href="">Call recording</a>
+                    <a title="Call recording" href="#">Call recording</a>
                     <ul>
-                      <li><a title="Mobile recording" href="">Mobile recording</a></li>
-                      <li><a title="Fixed-Line recording" href="">Fixed-Line recording</a></li>
-                      <li><a title="Multi-channel recording" href="">Multi-channel recording</a></li>
+                      <li><a title="Mobile recording" href="#">Mobile recording</a></li>
+                      <li><a title="Fixed-Line recording" href="#">Fixed-Line recording</a></li>
+                      <li><a title="Multi-channel recording" href="#">Multi-channel recording</a></li>
                     </ul>
                   </li>
-                  <li><a title="Interaction Analytics" href="">Interaction Analytics</a></li>
+                  <li><a title="Interaction Analytics" href="#">Interaction Analytics</a></li>
                   <li>
-                    <a title="PCI Compliance" href="">PCI Compliance</a>
+                    <a title="PCI Compliance" href="#">PCI Compliance</a>
                     <ul>
-                      <li><a title="Live - DTMF" href="">Live - DTMF</a></li>
-                      <li><a title="Automate" href="">Automate</a></li>
-                      <li><a title="Archive" href="">Archive</a></li>
+                      <li><a title="Live - DTMF" href="#">Live - DTMF</a></li>
+                      <li><a title="Automate" href="#">Automate</a></li>
+                      <li><a title="Archive" href="#">Archive</a></li>
                     </ul>
                   </li>
                 </ul>
@@ -727,58 +745,58 @@
               <li>
                 <span>Services</span>
                 <ul>
-                  <li><a title="Support" href="">Support</a></li>
-                  <li><a title="Training" href="">Training</a></li>
-                  <li><a title="Consulting" href="">Consulting</a></li>
+                  <li><a title="Support" href="#">Support</a></li>
+                  <li><a title="Training" href="#">Training</a></li>
+                  <li><a title="Consulting" href="#">Consulting</a></li>
                 </ul>
                 <span class="l-footer__top-links__partners">Partners</span>
                 <ul>
-                  <li><a title="Partners Overview" href="">Partners Overview</a></li>
-                  <li><a title="Solution Partners" href="">Solution Partners</a></li>
-                  <li><a title="Consulting Partners" href="">Consulting Partners</a></li>
-                  <li><a title="Resellers" href="">Resellers</a></li>
+                  <li><a title="Partners Overview" href="#">Partners Overview</a></li>
+                  <li><a title="Solution Partners" href="#">Solution Partners</a></li>
+                  <li><a title="Consulting Partners" href="#">Consulting Partners</a></li>
+                  <li><a title="Resellers" href="#">Resellers</a></li>
                 </ul>
               </li>
               <li>
                 <span>About Us</span>
                 <ul>
-                  <li><a title="About" href="">About</a></li>
-                  <li><a title="Leadership Team" href="">Leadership Team</a></li>
-                  <li><a title="News" href="">News</a></li>
-                  <li><a title="Events" href="">Events</a></li>
-                  <li><a title="Customers" href="">Customers</a></li>
-                  <li><a title="Careers" href="">Careers</a></li>
+                  <li><a title="About" href="#">About</a></li>
+                  <li><a title="Leadership Team" href="#">Leadership Team</a></li>
+                  <li><a title="News" href="#">News</a></li>
+                  <li><a title="Events" href="#">Events</a></li>
+                  <li><a title="Customers" href="#">Customers</a></li>
+                  <li><a title="Careers" href="#">Careers</a></li>
                 </ul>
               </li>
               <li>
                 <span>Resources</span>
                 <ul>
-                  <li><a title="All Resources" href="">Resources</a></li>
-                  <li><a title="White papers" href="">White papers</a></li>
-                  <li><a title="Datasheets" href="">Datasheets</a></li>
-                  <li><a title="eBooks" href="">eBooks</a></li>
+                  <li><a title="All Resources" href="#">Resources</a></li>
+                  <li><a title="White papers" href="#">White papers</a></li>
+                  <li><a title="Datasheets" href="#">Datasheets</a></li>
+                  <li><a title="eBooks" href="#">eBooks</a></li>
                 </ul>
               </li>
               <li>
                 <span>Follow us</span>
                 <ul class="social-media social-media--blue">
                   <li>
-                    <a rel="external" title="Our profile at Twitter" href="">
+                    <a rel="external" title="Our profile at Twitter" href="#">
                     <span class="social-media__ico social-media__twitter"><span><span>Twitter</span></span></span>
                     </a>
                   </li>
                   <li>
-                    <a rel="external" title="Our profile at Google+" href="">
+                    <a rel="external" title="Our profile at Google+" href="#">
                     <span class="social-media__ico social-media__gplus"><span><span>Google+</span></span></span>
                     </a>
                   </li>
                   <li>
-                    <a rel="external" title="Our profile at Facebook" href="">
+                    <a rel="external" title="Our profile at Facebook" href="#">
                     <span class="social-media__ico social-media__facebook"><span><span>Facebook</span></span></span>
                     </a>
                   </li>
                   <li>
-                    <a rel="external" title="Our profile at LinkedIn" href="">
+                    <a rel="external" title="Our profile at LinkedIn" href="#">
                     <span class="social-media__ico social-media__linkedin"><span><span>LinkedIn</span></span></span>
                     </a>
                   </li>
@@ -927,6 +945,19 @@
         lazyIframeObserver.observe(lazyIframe);
       });
       /* end lazy iframe */
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Corporation",
+        "name": "Web Dev Insider",
+        "url": "https://frontend-optimisation-starter-kit-pied.vercel.app/",
+        "logo": "https://frontend-optimisation-starter-kit-pied.vercel.app/assets/images/homework/logo.svg",
+        "sameAs": [
+          "https://www.facebook.com/webdevinsider/",
+          "https://www.instagram.com/webdevinsider/"
+        ]
+      }
     </script>
   </body>
 </html>

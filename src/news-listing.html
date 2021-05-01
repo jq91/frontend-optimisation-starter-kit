@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Web Dev Insider - site to optimise - homepage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web Dev Insider demo page for learning purposes.">
+    <meta name="description" content="Web Dev Insider demo page for learning purposes. Core Web Vitals.">
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, nofollow">
 
@@ -17,6 +17,16 @@
     <link href="/assets/css/homework/app.css" rel="stylesheet">
     <link href="/assets/css/homework/tailwind.min.css" rel="stylesheet">
     <link href="/favicon.ico" rel="icon">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/homework/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/homework/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/images/homework/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/homework/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/images/homework/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/homework/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/images/homework/apple-touch-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/homework/apple-touch-icon-180x180.png" />
+    <meta name="theme-color" content="#fff">
 
     <style id="critical-styles">
       @font-face {
@@ -37,13 +47,14 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-TGDSWZ8');</script>
     <!-- End Google Tag Manager -->
+    <link rel="canonical" href="https://frontend-optimisation-starter-kit-pied.vercel.app/news-listing.html" />
   </head>
   <body>
 
     <div class="overlay"></div>
     <div class="search">
       <div class="layout3 text text--bg-grey">
-        <a class="btn-close search__btn-close" href="javascript:;">Close</a>
+        <a class="btn-close search__btn-close" href="javascript:;" title="Close">Close</a>
         <p>Search and hit enter</p>
         <form action="/search" method="get">
           <input type="text" name="phrase" id="phrase" placeholder="What are you looking for?">
@@ -53,7 +64,7 @@
     </div>
 
     <nav class="l-navbar">
-      <a class="logo" href="/">
+      <a class="logo" href="/" title="Link to logo">
         <img src="/assets/images/homework/logo.svg" width="120" height="58" alt="Web Dev Insider" title="Web Dev Insider">
       </a>
 
@@ -160,8 +171,8 @@
 
       <div class="layout4">
 
-          <header class="inner-page--blue-fill__header inner-page--blue-fill__header--news text text--bg-blue" role="banner">
-            <h1 class="headline-1">News</h1>
+          <header class="inner-page--blue-fill__header text text--bg-blue" role="banner">
+            <h1 class="headline-1">Latest news form our blog</h1>
           </header>
 
           <div id="js-cta-ad"></div>

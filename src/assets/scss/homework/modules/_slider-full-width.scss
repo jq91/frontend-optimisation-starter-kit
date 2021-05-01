@@ -64,10 +64,11 @@
 					left: 50%;
 					margin-left: -11px;
 					display: block;
-
-				    content: "";
-				    width: 22px;
-				    height: 9px;
+				  content: "";
+          width: 0;
+          height: 0;
+          border-width: 0 11px 9px 11px;
+          border-style: solid;
 				}
 			}
 
@@ -77,7 +78,7 @@
 				background: $blue1;
 
 				&:before {
-					background: url(/assets/images/homework/top-arrow-capture.png);
+          border-color: transparent transparent $blue1 transparent;
 				}
 			}
 
@@ -85,7 +86,7 @@
 				background: $green;
 
 				&:before {
-					background: url(/assets/images/homework/top-arrow-store.png);
+          border-color: transparent transparent $green transparent;
 				}
 			}
 
@@ -93,16 +94,15 @@
 				background: $orange;
 
 				&:before {
-					background: url(/assets/images/homework/top-arrow-analyze.png);
+          border-color: transparent transparent $orange transparent;
 				}
 			}
 
 			&.red.active {
 				background: $red;
 
-
 				&:before {
-					background: url(/assets/images/homework/top-arrow-consume.png);
+          border-color: transparent transparent $red transparent;
 				}
 			}
 		}

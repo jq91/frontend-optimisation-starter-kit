@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://embed.tawk.to">
     <link rel="preconnect" href="//use.typekit.net">
     <link href="/assets/css/homework/app.css" rel="stylesheet">
-    <link href="/assets/css/homework/tailwind.min.css" rel="stylesheet">
+    <!--<link href="/assets/css/homework/tailwind.min.css" rel="stylesheet">-->
     <link href="/favicon.ico" rel="icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/homework/apple-touch-icon-57x57.png" />
@@ -36,6 +36,9 @@
         url('/assets/fonts/montserrat-v15-latin-regular.woff2') format('woff2'),
         url('/assets/fonts/montserrat-v15-latin-regular.woff') format('woff');
         font-display: swap;
+      }
+      .lazy-css-render {
+        content-visibility: auto;
       }
     </style>
 
@@ -75,7 +78,7 @@
         <li><a title="Contact" href="/">Contact</a></li>
         <li><a class="navbar-menu__search js-open-searchbar" href="#" title="What are you looking for?"><span>Search</span></a></li>
       </ul>
-      <a title="Menu" class="l-navbar__burger" href="javascript:;">Menu</a>
+      <a title="Menu" class="l-navbar__burger" href="javascript:;" role="button">Menu</a>
     </nav>
     <div class="l-megamenu">
       <div class="layout">
@@ -180,7 +183,7 @@
                         <article class="news-list__read-item">
                             <div>
                                 <figure>
-                                    <img data-src="/assets/images/homework/post4.png" class="lazy" loading="lazy" width="1393" height="1018" alt="Post">
+                                    <img data-src="/assets/images/homework/post4.png" class="lazy" loading="lazy" width="1514" height="1018" alt="Post">
                                 </figure>
 
                                 <header>
@@ -259,7 +262,7 @@
                             </div>
 
 
-                            <div class="subscription text text--bg-grey">
+                            <div class="lazy-css-render subscription text text--bg-grey">
                                 <span class="headline-7">Subscribe to receive FREE updates</span>
                                 <div class="subscription__btns">
                                     <a title="RSS channel" class="subscription__rss" href="">RSS</a>
@@ -312,7 +315,7 @@
     <!-- footer -->
 
 
-    <footer class="l-footer">
+    <footer class="lazy-css-render l-footer">
       <div class="l-footer__top">
         <div class="layout">
           <div class="col-15 left">

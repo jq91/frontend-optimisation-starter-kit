@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://embed.tawk.to">
     <link rel="preconnect" href="//use.typekit.net">
     <link href="/assets/css/homework/app.css" rel="stylesheet">
-    <link href="/assets/css/homework/tailwind.min.css" rel="stylesheet">
+    <!--<link href="/assets/css/homework/tailwind.min.css" rel="stylesheet">-->
     <link href="/favicon.ico" rel="icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/homework/apple-touch-icon-57x57.png" />
@@ -37,6 +37,9 @@
         url('/assets/fonts/montserrat-v15-latin-regular.woff2') format('woff2'),
         url('/assets/fonts/montserrat-v15-latin-regular.woff') format('woff');
         font-display: swap;
+      }
+      .lazy-css-render {
+        content-visibility: auto;
       }
     </style>
 
@@ -76,7 +79,7 @@
         <li><a title="Contact" href="/">Contact</a></li>
         <li><a class="navbar-menu__search js-open-searchbar" href="#" title="What are you looking for?"><span>Search</span></a></li>
       </ul>
-      <a title="Menu" class="l-navbar__burger" href="javascript:;">Menu</a>
+      <a title="Menu" class="l-navbar__burger" href="javascript:;" role="button">Menu</a>
     </nav>
     <div class="l-megamenu">
       <div class="layout">
@@ -223,7 +226,7 @@
                           </div>
                       </article>
 
-                      <div class="inner-page__group news-list__2-cols">
+                      <div class="lazy-css-render inner-page__group news-list__2-cols">
                           <article>
                               <div>
                                   <header>
@@ -305,7 +308,7 @@
                           </article>
 
 
-                        </div><div class="inner-page__group news-list__2-cols">
+                        </div><div class="lazy-css-render inner-page__group news-list__2-cols">
                           <article>
                               <div>
                                   <header>
@@ -388,7 +391,7 @@
 
 
 
-                        </div><div class="pagination"><ul><li><a class="active" title="Go to 1 page" href="/news/corporate/">1</a></li><li><a title="Go to 2 page" href="/news/corporate/page/1">2</a></li><li><a title="Go to 3 page" href="/news/corporate/page/2">3</a></li><li>...</li><li><a title="Go to 4 page" href="/news/corporate/page/3">4</a></li><li><a class="pagination__next" title="Go to next page" href="/news/corporate/page/1">next</a></li></ul></div>
+                        </div><div class="lazy-css-render pagination"><ul><li><a class="active" title="Go to 1 page" href="/news/corporate/">1</a></li><li><a title="Go to 2 page" href="/news/corporate/page/1">2</a></li><li><a title="Go to 3 page" href="/news/corporate/page/2">3</a></li><li>...</li><li><a title="Go to 4 page" href="/news/corporate/page/3">4</a></li><li><a class="pagination__next" title="Go to next page" href="/news/corporate/page/1">next</a></li></ul></div>
               </div>
 
           </div>
@@ -406,7 +409,7 @@
 </div>
   <!-- footer -->
 
-    <footer class="l-footer">
+    <footer class="lazy-css-render l-footer">
       <div class="l-footer__top">
         <div class="layout">
           <div class="col-15 left">

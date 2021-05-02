@@ -3,12 +3,14 @@
 	width: 100%;
 	height: 800px;
 
-  & > img {
+  & > picture > img, & > picture > source{
     position: absolute;
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;
+    left: 0;
+    right: 0;
   }
 
 	.layout {

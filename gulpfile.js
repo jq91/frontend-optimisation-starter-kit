@@ -146,7 +146,7 @@ gulp.task('js-minified', () => {
 });
 
 gulp.task('images', () => {
-  return gulp.src([ src_assets_folder + 'images/**/*.+(png|jpg|jpeg|gif|svg|ico)' ], { since: gulp.lastRun('images') })
+  return gulp.src([ src_assets_folder + 'images/**/*.+(png|jpg|jpeg|gif|webp|svg|ico)' ], { since: gulp.lastRun('images') })
     .pipe(plumber())
     .pipe(imagemin())
     .pipe(gulp.dest(dist_assets_folder + 'images'))
@@ -204,18 +204,35 @@ gulp.task('generate-service-worker', gulp.series('copy-sw-scripts', 'write-servi
 
 gulp.task('generate-critical-css', (cb) => {
   critical.generate({
+    
     inline: true,
     base: dist_folder,
-    src: 'homework-homepage.html',
+    src: 'index.html',
+
     target: {
-      html: 'homework-homepage-critical.html',
-      css: 'critical.css',
+      html: 'index.html',
+      //css: 'critical.css'
     },
-    width: 1300,
-    height: 900,
+    minify: true,
+    dimensions: [
+    {
+      width: 360,
+      height: 800,
+    },
+    {
+      width: 1440,
+      height: 1100,
+    },
+  ],
+  ignore: {
+    atrule: ['@font-face']
+  },
+  
   });
   cb();
 });
+
+
 
 gulp.task(
   'build',

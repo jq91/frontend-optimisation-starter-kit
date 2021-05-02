@@ -16,7 +16,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="preconnect" href="//use.typekit.net">
     <link href="/assets/css/homework/app.css" rel="stylesheet">
-    <link href="/assets/css/homework/tailwind.min.css" rel="stylesheet">
+    <!--<link href="/assets/css/homework/tailwind.min.css" rel="stylesheet">-->
     <link href="/favicon.ico" rel="icon">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/images/homework/apple-touch-icon-57x57.png" />
@@ -38,6 +38,9 @@
         url('/assets/fonts/montserrat-v15-latin-regular.woff2') format('woff2'),
         url('/assets/fonts/montserrat-v15-latin-regular.woff') format('woff');
         font-display: swap;
+      }
+      .lazy-css-render {
+        content-visibility: auto;
       }
     </style>
 
@@ -77,7 +80,7 @@
         <li><a title="Contact" href="/">Contact</a></li>
         <li><a class="navbar-menu__search js-open-searchbar" href="#" title="What are you looking for?"><span>Search</span></a></li>
       </ul>
-      <a title="Menu" class="l-navbar__burger" href="javascript:;">Menu</a>
+      <a title="Menu" class="l-navbar__burger" href="javascript:;" role="button">Menu</a>
     </nav>
     <div class="l-megamenu">
       <div class="layout">
@@ -212,7 +215,7 @@
         </div>
 
 
-        <div id="solution-partners" class="page-section  page-section--bg-white">
+        <div id="solution-partners" class="lazy-css-render page-section  page-section--bg-white">
             <div class="layout text">
                 <div class="col-40 left">
                     <div>
@@ -232,7 +235,7 @@
             </div>
         </div>
 
-        <div class="page-section ">
+        <div class="lazy-css-render page-section">
             <div class="layout text">
                   <div class="col-50 left">
                       <div>
@@ -258,7 +261,7 @@
         </div>
 
 
-      <div class="page-section  page-section--bg-dark">
+      <div class="lazy-css-render page-section page-section--bg-dark">
           <div class="layout text">
                   <div class="col-100 left">
                       <div><h2 class="headline-6" style="text-align: center;">Become our Partner</h2>
@@ -276,7 +279,7 @@
   </div>
   <!-- footer -->
 
-  <footer class="l-footer">
+  <footer class="lazy-css-render l-footer">
       <div class="l-footer__top">
         <div class="layout">
           <div class="col-15 left">

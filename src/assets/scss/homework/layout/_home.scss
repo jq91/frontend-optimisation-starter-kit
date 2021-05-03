@@ -99,14 +99,13 @@
 
 
 			&:before {
-				position: absolute;
-				top: -8px;
-
-				width: 2px;
-				height: 74px;
-				content : "";
-
-				background: url(/assets/images/homework/sep-banner.png) no-repeat;
+        position: absolute;
+        top: -8px;
+        width: 1px;
+        height: 65px;
+        content: "";
+        background: rgba(35,192,230,1);
+        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(35,192,230,1) 40%, rgba(35,192,230,1) 80%, rgba(255,255,255,0) 100%);
 			}
 		}
 	}

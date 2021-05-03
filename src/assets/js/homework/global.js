@@ -483,7 +483,25 @@ define(['components/domReady', 'components/flexbox_fallback', 'components/placeh
 
       		var btn_payment_init = document.getElementById('payment-demo-btn');
           btn_payment_init.addEventListener('click', function (event) {
-            global.paymentForms();
+            var s2 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s2.async = true;
+            s2.src = 'https://js.stripe.com/v3';
+            s0.parentNode.insertBefore(s2, s0);
+
+            var waiting_stripe = null;
+            function waitForStripe() {
+              // check that the RequireJS object has been defined
+              if (typeof Stripe === "undefined") {
+                setTimeout(waitForStripe, 49);
+                return;
+              }
+              clearInterval(waiting_stripe);
+
+              global.paymentForms();
+
+            }
+            waiting_stripe = setInterval(waitForStripe, 49);
+
           }, false);
 
           global.animations();

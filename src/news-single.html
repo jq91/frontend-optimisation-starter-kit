@@ -9,7 +9,6 @@
     <meta name="robots" content="noindex, nofollow">
 
     <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-    <link rel="preload" as="style" href="https://use.typekit.net/lna1ryl.css">
     <link rel="preconnect" href="https://www.googletagmanager.com">
     <link rel="preconnect" href="https://embed.tawk.to">
     <link rel="preconnect" href="//use.typekit.net">
@@ -441,16 +440,16 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <script src="/assets/js/homework/vendor/jquery/dist/jquery.min.js" async></script>
+    <script src="/assets/js/homework/vendor/jquery/dist/jquery.min.js"></script>
     <script>var media_url = '/assets/', site_url = '/';</script>
-    <script data-main="/assets/js/homework/home" src="/assets/js/homework/vendor/requirejs/require.js" async></script>
+    <script data-main="/assets/js/homework/home" src="/assets/js/homework/vendor/requirejs/require.js"></script>
     <script>
-      "use strict";
-
       if ('loading' in HTMLImageElement.prototype) {
         var resources = document.querySelectorAll("[loading]");
         resources.forEach(function (resource) {
-          resource.src = resource.dataset.src;
+          if(resource.dataset.src != undefined) {
+            resource.src = resource.dataset.src;
+          }
         });
       } else {
         var script = document.createComment("script");

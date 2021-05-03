@@ -8,10 +8,10 @@
   }
 
 	a {
-		color: $lightblue;
+		color: #fff;
 
 		&:hover {
-			color: #fff;
+			text-decoration: underline;
 		}
 	}
 }
@@ -84,9 +84,6 @@
 					padding: 2px 0;
 				}
 
-				a {
-					color: #7fcde3;
-				}
 			}
 		}
 	}

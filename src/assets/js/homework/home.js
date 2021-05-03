@@ -99,7 +99,9 @@ require(['./main'], function (main) {
 
 
 				change_banner_size();
-				this.banner_anim();
+				if(window.innerWidth > 767) {
+          this.banner_anim();
+        }
 
 
 				$(window).resize(function(){

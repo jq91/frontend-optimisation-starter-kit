@@ -69,4 +69,10 @@
 	margin-left: 10px;
 	padding-left: 15px;
 	border-left: 1px solid $darkgrey;
+  & > .see-all-link {
+    color: #000;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

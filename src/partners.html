@@ -8,6 +8,8 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="robots" content="noindex, follow">
 
+    <link rel="preload" as="image" media="(max-width: 767px)" href="/assets/images/homework/header-blue-mobile.webp" />
+    <link rel="preload" as="image" media="(min-width: 768px)" href="/assets/images/homework/header-blue-desktop.webp" />
     <link rel="preconnect" href="https://use.typekit.net" crossorigin>
     <link rel="preconnect" href="https://ik.imagekit.io">
     <link rel="preconnect" href="https://www.googletagmanager.com">
@@ -172,6 +174,11 @@
 
     <div class="inner-page">
       <header class="inner-page__header inner-page__header--with-video inner-page__header--ico" role="banner">
+        <picture>
+          <source media="(max-width:767px)" srcset="/assets/images/homework/header-blue-mobile.webp">
+          <source media="(min-width:768px)" srcset="/assets/images/homework/header-blue-desktop.webp">
+          <img src="/assets/images/homework/header-blue-mobile.jpg" alt="Hero banner">
+        </picture>
 
           <video class="inner-page__header-video" autoplay loop muted playsinline>
             <source src="/assets/videos/video.mp4" type="video/mp4">
